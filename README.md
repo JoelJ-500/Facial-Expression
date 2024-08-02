@@ -51,11 +51,11 @@ This notebook utilizes an ensemble model approach:
 
 ## Challenges and Solutions
 
-**Situation:** A major challenge was the ambiguity of predicting emotions with similar facial features, such as anger and fear, which can result in high predictive probabilities for both.
+**Challenge::** A major challenge was the ambiguity of predicting emotions with similar facial features, such as anger and fear, which can result in high predictive probabilities for both.
 
-**Task:** To address this, consider integrating contextual information, such as background analysis, to refine emotion predictions.
+**Solution:** Contextual information, such as image background analysis, can be integrated to refine the emotion predictions.
 
-**Action:** Experiment with different techniques and datasets to enhance model accuracy. Future work may involve additional feature extraction methods or data augmentation to improve differentiation between similar emotions.
+**Possible implementation of Solution:** Experimenting with different techniques and datasets to enhance model accuracy. Future work may involve additional feature extraction methods or data augmentation to improve differentiation between similar emotions.
 
 **Result:** Initial results indicate that contextual filtering could improve prediction accuracy, providing a direction for future development.
 

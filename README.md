@@ -1,9 +1,9 @@
 # Facial Expression Recognition App
 
-This repository contains a machine learning application designed to detect facial expressions using Gradio. Developed in Google Colab, this project uses the CK+ dataset to train models that can recognize various emotions from facial images. The application provides a user-friendly interface for emotion detection through two separate Python notebooks, each employing a distinct model training strategy.
+The attached notebooks use machine learning to detect 7 facial expressions: happy, anger, contempt, fear, surprise, sadness, disgust. This project uses the CK+ dataset and two approaches- using a single model and multiple models, to categorize the facial expression of any input image. Each approach is in two seperate notebooks in the 'Notebooks' folder. Gradio was used to provide a user-friendly interface for any user to use, in both notebooks.
 
 ## Table of Contents
-- [Project Overview](#project-overview)
+- [Approaches](#approaches)
 - [Dataset](#dataset)
 - [Notebooks](#notebooks)
   - [Facial Expression Detector](#facial-expression-detector)
@@ -11,22 +11,14 @@ This repository contains a machine learning application designed to detect facia
 - [Challenges and Solutions](#challenges-and-solutions)
 - [Installation and Usage](#installation-and-usage)
 
-## Project Overview
+## Approaches
 
-**Situation:** The primary objective of this project was to develop a machine learning application capable of recognizing facial expressions from images. The goal was to build an intuitive and accessible interface using Gradio to showcase the capabilities of machine learning models trained on the CK+ dataset.
-
-**Task:** Develop a Gradio app that leverages deep learning to accurately predict emotions from facial images. This involved preprocessing the CK+ dataset, building and training models, and creating a user interface to interact with the models.
-
-**Action:** Two different approaches were taken to achieve the task:
-
-1. Training a Convolutional Neural Network (CNN) model from scratch.
-2. Creating an ensemble model using three pre-trained models from the Keras library.
-
-**Result:** The Gradio app successfully demonstrates emotion detection, providing a foundation for further enhancements and potential real-world applications.
+1. Training a Convolutional Neural Network (CNN) model from scratch. - *Facial_Expression_Detector.ipynb*
+2. Creating an ensemble model (combination of models) by combining the layers of three pre-trained models from the Keras library, and then training it.- - *Expression_Detector_Ensemble.ipynb*
 
 ## Dataset
 
-The CK+ (Extended Cohn-Kanade) dataset is used in this project, which consists of labeled facial expressions divided into seven categories, each representing a distinct emotion. These categories are used as output labels for model training.
+The CK+ dataset (Extended: Cohn-Kanade) is used in this project, which consists of labeled facial expressions divided into seven categories- happy, anger, contempt, fear, surprise, sadness, disgust. These categories are used as output labels for model training.
 
 ## Notebooks
 
@@ -63,9 +55,9 @@ This notebook utilizes an ensemble model approach:
 
 ### Prerequisites
 
-- Google Colab
-- Gradio
-- CK+ dataset and pre-trained models (provided in this repository)
+- Google Colab (Optional but recommended)
+- Gradio (Command to install its dependecies, available in notebook)
+- CK+ dataset and pre-trained models (provided in the 'dataset' folder in repo.)
 
 ### Running the Notebooks
 
